@@ -6,7 +6,7 @@ import Restart from '../components/game/Restart'
 import HiddenNum from '../components/game/HiddenNum'
 import GamePad from '../components/game/GamePad'
 
-const game = () => {
+const Playground = () => {
   const { isCorrect, isLose } = useSelector(store => store.game)
   const dispatch = useDispatch()
 
@@ -30,4 +30,4 @@ const game = () => {
   )
 }
 
-export default game
+export default Playground

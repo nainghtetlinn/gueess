@@ -1,4 +1,4 @@
-const about = () => {
+const About = () => {
   return (
     <section>
       <header className="p-5">
@@ -42,4 +42,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About

@@ -23,6 +23,7 @@ const Footer = () => {
             href="https://twitter.com/Naing_95"
             className="text-gray-500"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <BsTwitter size={20} />
           </a>

@@ -1,6 +1,6 @@
 import StartBtn from '../components/StartBtn'
 
-const howto = () => {
+const HowTo = () => {
   return (
     <section>
       <header className="p-5">
@@ -34,4 +34,4 @@ const howto = () => {
   )
 }
 
-export default howto
+export default HowTo
