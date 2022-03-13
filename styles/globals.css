@@ -1,16 +1,32 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  box-sizing: border-box;
+@layer base {
+  :root {
+    --color-text-base: #fffffe;
+    --color-headline: #094067;
+    --color-paragraph: #5f6c7b;
+    --color-button-text: #3da9fc;
+
+    --color-bg-primary: #fffffe;
+    --color-bg-secondary: #90b4ce;
+    --color-highlight: #3da9fc;
+
+    --color-tertiary: #ef4565;
+  }
+  html {
+    font-family: 'Quicksand', sans-serif;
+  }
+  body {
+    background-color: #fffffe;
+  }
+  h2 {
+    @apply text-3xl sm:text-5xl;
+  }
+  h4 {
+    @apply text-2xl font-bold;
+  }
 }
