@@ -1,11 +1,12 @@
-import AppStartButton from "../components/AppStartButton";
+import Link from 'next/link'
 
 const HowToPlayPage = () => {
   return (
-    <section className="card mx-auto max-w-96">
-      <main className="card-body">
-        <h2 className="card-title">How To Play?</h2>
-        <ul className="list-disc space-y-2">
+    <section className='container card mx-auto'>
+      <main className='card-body'>
+        <h2 className='card-title'>How To Play?</h2>
+
+        <ul className='list-disc space-y-2'>
           <li>Press &ldquo;start&rdquo; to start the game.</li>
           <li>When the game started, it will generate a random number.</li>
           <li>
@@ -22,12 +23,18 @@ const HowToPlayPage = () => {
             first number and vice versa.
           </li>
         </ul>
-      </main>
-      <div className="flex justify-center">
-        <AppStartButton />
-      </div>
-    </section>
-  );
-};
 
-export default HowToPlayPage;
+        <div className='card-actions justify-center'>
+          <Link
+            href='/playground'
+            className='btn btn-primary'
+          >
+            Start Game
+          </Link>
+        </div>
+      </main>
+    </section>
+  )
+}
+
+export default HowToPlayPage
