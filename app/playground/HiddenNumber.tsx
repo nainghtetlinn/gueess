@@ -38,11 +38,11 @@ const HiddenNumber = () => {
 
           <div className='flex items-center justify-center gap-2'>
             <div className='flex h-12 w-12 items-center justify-center bg-base-100 text-primary'>
-              <h5>{startNumber}</h5>
+              <h5>{isGameOver ? '-' : startNumber}</h5>
             </div>
             <span>to</span>
             <div className='flex h-12 w-12 items-center justify-center bg-base-100 text-primary'>
-              <h5>{endNumber}</h5>
+              <h5>{isGameOver ? '-' : endNumber}</h5>
             </div>
           </div>
         </div>
