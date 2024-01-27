@@ -39,6 +39,7 @@ const Control = ({ start }: { start: () => void }) => {
     if (attemptCount === maxAttempts) return console.log('Lose')
 
     dispatch(guessNumber({ guess }))
+    setNum('')
   }
 
   return (
