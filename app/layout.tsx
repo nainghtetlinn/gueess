@@ -4,6 +4,7 @@ import './globals.css'
 
 import StoreProvider from './StoreProvider'
 import AppNav from './components/AppNav'
+import Footer from './components/Footer'
 
 const inter = Quicksand({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         <StoreProvider>
           <AppNav />
           <main>{children}</main>
+          <Footer />
         </StoreProvider>
       </body>
     </html>
