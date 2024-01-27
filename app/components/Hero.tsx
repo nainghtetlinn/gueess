@@ -25,10 +25,10 @@ const Hero = () => {
 
           <div className='flex justify-center'>
             <Link
-              href='/playground'
+              href='/howtoplay'
               className='btn'
             >
-              Start Game
+              How to Play?
             </Link>
           </div>
         </div>
