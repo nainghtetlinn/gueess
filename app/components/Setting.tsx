@@ -6,13 +6,13 @@ import { updateSetting } from '@/lib/features/setting'
 
 const Setting = () => {
   const { attemptOptions, maxNumberOptions, maxNumber, maxAttempt } =
-    useAppSelector(s => s.setting)
+    useAppSelector(store => store.setting)
 
   const dispatch = useAppDispatch()
 
   return (
     <section>
-      <div className='container card mx-auto'>
+      <div className='card mx-auto max-w-96'>
         <main className='card-body'>
           <h2 className='card-title'>Settings</h2>
 
