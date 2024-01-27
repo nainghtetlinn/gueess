@@ -2,14 +2,14 @@ import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 
 type SettingType = {
-  maxAttempt: number
+  maxAttempts: number
   maxNumber: number
   attemptOptions: number[]
   maxNumberOptions: number[]
 }
 
 const initialState: SettingType = {
-  maxAttempt: 3,
+  maxAttempts: 3,
   maxNumber: 100,
   attemptOptions: [3, 5, 8],
   maxNumberOptions: [100, 250, 500],
@@ -21,7 +21,7 @@ const settingSlice = createSlice({
   reducers: {
     updateSetting: (
       state,
-      action: PayloadAction<{ maxAttempt?: number; maxNumber?: number }>,
+      action: PayloadAction<{ maxAttempts?: number; maxNumber?: number }>,
     ) => {
       return { ...state, ...action.payload }
     },
