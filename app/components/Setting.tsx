@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from '@/lib/hook'
 import { updateSetting } from '@/lib/features/setting'
 
 const Setting = () => {
-  const { attemptOptions, maxNumberOptions, maxNumber, maxAttempt } =
+  const { attemptOptions, maxNumberOptions, maxNumber, maxAttempts } =
     useAppSelector(store => store.setting)
 
   const dispatch = useAppDispatch()
@@ -22,9 +22,9 @@ const Setting = () => {
             </div>
             <select
               className='select select-bordered select-primary'
-              defaultValue={maxAttempt}
+              defaultValue={maxAttempts}
               onChange={e => {
-                dispatch(updateSetting({ maxAttempt: +e.target.value }))
+                dispatch(updateSetting({ maxAttempts: +e.target.value }))
               }}
             >
               {attemptOptions.map(a => (
