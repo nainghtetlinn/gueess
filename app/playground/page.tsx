@@ -1,25 +1,26 @@
 'use client'
 
-import HiddenNumber from './HiddenNumber'
 import Control from './Control'
+import HiddenNumber from './HiddenNumber'
 
-import { useEffect } from 'react'
-import { useAppSelector, useAppDispatch } from '@/lib/hook'
 import { startGame } from '@/lib/features/game'
+import { useAppDispatch, useAppSelector } from '@/lib/hook'
+import { useEffect } from 'react'
 
 const PlaygroundPage = () => {
   const dispatch = useAppDispatch()
-  const { isGameOver } = useAppSelector(store => store.game)
   const { maxNumber, maxAttempts } = useAppSelector(store => store.setting)
 
-  useEffect(() => {
+  const start = () => {
     dispatch(startGame({ maxAttempts, endNumber: maxNumber }))
-  }, [])
+  }
+
+  useEffect(start, [])
 
   return (
     <>
       <HiddenNumber />
-      <Control />
+      <Control start={start} />
     </>
   )
 }
