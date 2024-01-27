@@ -1,6 +1,7 @@
 'use client'
 
 import Hero from './components/Hero'
+import Setting from './components/Setting'
 import { useAppDispatch } from '@/lib/hook'
 import { checkAnswer } from '@/lib/features/game'
 
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Setting />
       <div>
         <button
           onClick={() => {

@@ -4,7 +4,7 @@ import settingReducer from './features/setting'
 
 export const makeStore = () => {
   return configureStore({
-    reducer: { gameReducer },
+    reducer: { game: gameReducer, setting: settingReducer },
   })
 }
 
