@@ -3,7 +3,7 @@ import { FaXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <footer className='mt-10 text-secondary'>
+    <footer className='py-10 text-secondary'>
       <div className='container mx-auto flex flex-col items-center gap-4 sm:flex-row sm:justify-between'>
         <div className='flex flex-col items-center sm:flex-row'>
           <h4 className='text-xl sm:text-3xl'>Gueess</h4>
