@@ -8,7 +8,7 @@ const Hero = () => {
     <section className='bg-primary text-primary-content'>
       <div className='container relative mx-auto py-8'>
         {/* Background */}
-        <div className='absolute inset-0 overflow-hidden opacity-40'>
+        <div className='absolute inset-0 z-0 overflow-hidden opacity-40'>
           <div className='absolute left-0 top-0'>
             <PiDotsNine className='text-6xl' />
             <PiDotsSix className='text-6xl' />
@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
 
         {/* Content */}
-        <div>
+        <div className='relative z-10'>
           <h2 className='text-center text-4xl font-semibold uppercase'>
             Gueess
           </h2>
